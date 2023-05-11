@@ -12,7 +12,7 @@ export class GameLoopService {
 
   public Update(): void {  
     var dateNow = Date.now();    
-    const deltaTime = (dateNow - this.globalService.globalVar.lastTimeStamp) / 1000;
+    const deltaTime = (dateNow - this.globalService.globalVar.lastTimeStamp) / 100;
   
     this.deltaTime = deltaTime;
     this.globalService.globalVar.lastTimeStamp = dateNow;
